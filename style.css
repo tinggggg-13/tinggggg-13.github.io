@@ -1,0 +1,450 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  font-family: "微軟正黑體", sans-serif;
+  background: linear-gradient(to right, #b2f2e6 35%, #fffff0 35% 100%);
+  min-height: 100vh;
+}
+
+/* 左 */
+.sidebar {
+  width: 35%;
+  padding: 30px;
+  text-align: center;
+}
+
+.sidebar img {
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+}
+
+.sidebar h1 {
+  font-size: 32px;
+  margin: 20px 0;
+}
+
+.slogan {
+  position: relative;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  background-color: #ffe4b5;
+  padding: 6px 12px;
+  margin-left: 180px;
+  border-radius: 10px;
+  display: inline-block;
+  box-shadow: 1px 1px 6px rgba(0,0,0,0.1);
+}
+
+.social a img {
+  width: 30px;
+  height: 30px;
+  margin: 0 8px;
+}
+
+.school {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+/* 個人特質 */
+.traits-title {
+  display: inline-block;
+  background-color: #FFA488; 
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 6px 14px;
+  border-radius: 10px;
+  margin-top: 25px; 
+  margin-left: 10px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+}
+
+.traits-wrapper {
+  background-color: #d6f0ff;
+  padding: 32px;              
+  border-radius: 14px;      
+  width: fit-content;
+  margin-top: 30px;
+  margin-left: 100px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+  border: 1px solid #b0d4e8;
+}
+
+.traits-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.traits-list span {
+  background-color: #fff;
+  color: #333;
+  padding: 10px 18px;         
+  border-radius: 10px;
+  font-size: 22px;            
+  font-weight: 500;         
+  box-shadow: 1px 1px 4px rgba(0,0,0,0.1);
+  width: fit-content;
+}
+
+.Diverse-title {
+  display: inline-block;
+  background-color: #FFA488; 
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 6px 14px;
+  border-radius: 10px;
+  margin-top: 33px; 
+  margin-left: 10px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+}
+
+.Diverse-wrapper {
+  background-color: #d6f0ff;
+  padding: 32px;             
+  border-radius: 14px;        
+  width: fit-content;
+  margin-top: 35px;
+  margin-left: 90px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+  border: 1px solid #b0d4e8;
+}
+
+.Diverse-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.Diverse-list span {
+  background-color: #fff;
+  color: #333;
+  padding: 10px 18px;         
+  font-size: 22px;            
+  font-weight: 500;          
+  box-shadow: 1px 1px 4px rgba(0,0,0,0.1);
+  width: fit-content;
+}
+
+.Activity-title {
+  display: inline-block;
+  background-color: #FFA488; 
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 6px 14px;
+  border-radius: 10px;
+  margin-top: 33px; 
+  margin-left: 10px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+}
+
+.Activity-wrapper {
+  background-color: #d6f0ff;
+  padding: 32px;              
+  border-radius: 14px;        
+  width: fit-content;
+  margin-top: 35px;
+  margin-left: 50px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+  border: 1px solid #b0d4e8;
+}
+
+.Activity-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.Activity-list span {
+  background-color: #fff;
+  color: #333;
+  padding: 10px 18px;
+  border-radius: 10px;
+  font-size: 22px;
+  font-weight: 500;
+  box-shadow: 1px 1px 4px rgba(0,0,0,0.1);
+  width: fit-content;
+  white-space: nowrap;     
+  max-width: 100%;
+}
+
+/* 右 */
+.content {
+  width: 65%;
+  padding: 40px;
+}
+
+.section {
+  margin-bottom: 40px;
+}
+
+.section h2 {
+  font-size: 24px;
+  margin-bottom: 16px;
+  background-color: #FFA488;
+  color: white;
+  padding: 6px 14px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.section p {
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/* 圓行進度動畫 */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.circle {
+  position: relative;
+  width: 120px;
+  height: 120px;
+}
+
+svg {
+  width: 120px;
+  height: 120px;
+  transform: rotate(-90deg); /*從上方開始繪製*/
+}
+
+circle {
+  fill: none; /*填滿顏色*/
+  stroke-width: 12; /*邊框粗細*/
+}
+
+.bg {
+  stroke: pink;
+}
+
+.fg {
+  stroke: palevioletred;
+  stroke-dasharray: 250; /*圓周長*/
+  stroke-dashoffset: 250; /*起始位置的偏移量，完全隱藏到完全顯示*/
+}
+
+.fg.js { animation: jsProgress 2s forwards; }
+.fg.py { animation: pyProgress 2s forwards; }
+.fg.cc { animation: ccProgress 2s forwards; }
+.fg.c  { animation: cProgress 2s forwards; }
+
+@keyframes jsProgress { to { stroke-dashoffset: 50; } }
+@keyframes pyProgress { to { stroke-dashoffset: 100; } }
+@keyframes ccProgress { to { stroke-dashoffset: 125; } }
+@keyframes cProgress  { to { stroke-dashoffset: 100; }}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.circle {
+  position: relative;
+  width: 120px;
+  height: 120px;
+}
+
+svg {
+  width: 120px;
+  height: 120px;
+  transform: rotate(-90deg);
+}
+
+circle {
+  fill: none;
+  stroke-width: 12;
+}
+
+.bg {
+  stroke: pink;
+}
+
+.fg {
+  stroke: palevioletred;
+  stroke-dasharray: 314; 
+  stroke-dashoffset: 314;
+}
+
+.fg.js { animation: jsProgress 2s forwards; }
+.fg.py { animation: pyProgress 2s forwards; }
+.fg.cc { animation: ccProgress 2s forwards; }
+.fg.c  { animation: cProgress 2s forwards; }
+
+@keyframes jsProgress { to { stroke-dashoffset: 62.8; } }  
+@keyframes pyProgress { to { stroke-dashoffset: 125.6; } } 
+@keyframes ccProgress { to { stroke-dashoffset: 157; } }   
+@keyframes cProgress  { to { stroke-dashoffset: 125.6; } } 
+
+.label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.label h4 {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.label p {
+  font-size: 14px;
+  font-weight: bold;
+  color: palevioletred;
+}
+
+.pies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; /* 靠左 */
+  gap: 30px;                   /* 圓餅圖間距 */
+  margin-top: 20px;
+  margin-left: 20px;          
+}
+
+.pie-card {
+  width: 120px;               
+  height: 140px;
+  text-align: center;
+  font-size: 14px;
+  position: relative;
+}
+
+.pie {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  position: relative;
+  background: conic-gradient(#ddd 0 100%);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.04) inset;
+  overflow: hidden;
+}
+
+.pie::after {
+  content: "";
+  width: 84px;
+  height: 84px;
+  background: #f7fbf8;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+}
+
+/* 中間的字 */
+.pie .label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 2;
+  line-height: 1.4;
+}
+
+.pie .label span {
+  display: block;
+  font-weight: bold;
+  font-size: 14px;
+  color: #333;
+}
+
+.pie .label span:last-child {
+  color: #d46d8c;
+}
+
+/* 語言顏色 */
+.pie.chinese {
+  background: conic-gradient(#7fd19a 0deg 360deg);
+}
+
+.pie.english {
+  background: conic-gradient(#6fb3f2 0deg 252deg, 	#77DDFF 252deg 360deg);
+}
+
+.pie.japanese {
+  background: conic-gradient(#f2b66f 0deg 108deg, #ffeedd 108deg 360deg);
+}
+
+.legend {
+  margin-top: 6px;
+  font-size: 13px;
+}
+
+.swatch {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+
+/* 經歷 */
+.experience h3 {
+  font-size: 20px;
+  margin: 20px 0 10px;
+  color: #4a4a4a;
+}
+
+.exp-item {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+}
+
+.exp-item p {
+  flex: 1;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #333;
+}
+
+.exp-item img {
+  width: 260px;
+  height: 150px;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.exp-item img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(81, 0, 255, 0.4);
+}
+
+footer {
+  background-color: #FF8C66;
+  color: white;
+  text-align: center;
+  padding: 30px;
+  border-radius: 10px;
+  margin-top: 40px;
+  font-size: 20px;
+}
